@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let inputPhysic;
+    let inputMath;
+    let inputBiology;
+
+    inputPhysic = prompt("Nhập điểm Vật lý");
+    inputMath = prompt("Nhập điểm Toán");
+    inputBiology = prompt("Nhập điểm Sinh học");
+
+    let number1 = parseInt(inputPhysic);
+    let number2 = parseInt(inputMath);
+    let number3 = parseInt(inputBiology);
+    let sum = number1 + number2 + number3;
+    let average = sum /3.0
+
+    if (inputPhysic > 10){
+        alert('Bạn đã nhập sai điểm Vật Lý');
+    } if (inputMath > 10) {
+        alert('Bạn đã nhập sai điểm Toán');
+    } if (inputBiology > 10){
+        alert('Bạn đã nhập sai điểm Sinh Học');
+    } else {
+        document.write("Điểm trung bình là: " + average);
+        document.write("Tổng điểm là: " + sum);
+    }
+
+</script>
+</body>
+</html>
